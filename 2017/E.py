@@ -6,7 +6,7 @@ platform_values = [int(input(f"Enter the {x+1} value of your platform: ")) for x
 platform_values.sort()
 curr_value = platform_values[0]
 jumps = 0
-platform_values.pop(0)
+poped = platform_values.pop(0)
 for i in platform_values:
     if curr_value >= i - 60 and curr_value <= i + 60:
         curr_value = i
