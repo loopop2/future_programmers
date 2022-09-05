@@ -1,10 +1,12 @@
 sequence = input("Enter your sequence: ")
 limitations = "abcdefgh"
 
-# if sequence values not in limitations make the user input again
+# if sequence values not in limitations make the user input again | if sequence length > 40 make the user input again
 k = 0
 while k < len(sequence):
 	if sequence[k].lower() not in limitations:
+		sequence = input("Enter your sequence: ")
+	if len(sequence) > 40:
 		sequence = input("Enter your sequence: ")
 	k+=1
 
@@ -45,6 +47,3 @@ for i in range(len(sequence)):
 
 # print the result
 print(newString)
-		
-		
-	
