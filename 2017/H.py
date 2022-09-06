@@ -1,4 +1,4 @@
-#customors = int(input("Enter the amount of customers: "))
+customors = int(input("Enter the amount of customers: "))
 
 # make sure the n is always greater than or equal to 1 and less than and equal to 10**5
 while customors < 1 or customors > pow(10,5):
