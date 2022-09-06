@@ -1,6 +1,4 @@
-# The Code Is Not Completed Yet!
-
-customors = int(input("Enter the amount of customers: "))
+#customors = int(input("Enter the amount of customers: "))
 
 # make sure the n is always greater than or equal to 1 and less than and equal to 10**5
 while customors < 1 or customors > pow(10,5):
@@ -21,4 +19,12 @@ while k < len(times):
 
 times.sort()
 
-print(times)
+satisfied = 0
+
+# algorithm
+for i in range(len(times)):
+    if i == 0: satisfied+=1
+    else:
+        if sum(times[:i]) <= times[i]:
+            satisfied+=1
+print(satisfied)
