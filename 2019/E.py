@@ -3,4 +3,5 @@ d_o = [int(x) for in input("Devices and Operations: ").split(" ")]
 while n < 1 or n > 5000: n = int(input("Enter valid N: "))
 while q < 1 or q > pow(10,6): n = int(input("Enter valid Q: "))
 
+operations = [d_o[x] for x in range(0,len(d_o),2)]
 untested = [x for x in range(1,len(d_o),2)]
